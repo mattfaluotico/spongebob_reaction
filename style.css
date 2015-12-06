@@ -58,3 +58,7 @@ input#search:focus {
     outline: 0;
     border-bottom-color: yellow;
 }
+
+.reactions {
+    margin-top: 200px;
+}
