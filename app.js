@@ -14,7 +14,7 @@ function req(query) {
 		$.ajax({url: "react.json"})
 		.done(function(allReactions) {
 			var r = allReactions.filter(function(reaction) {
-					return reaction.keywords.indexOf(query) != -1;
+					return reaction.keywords.toLowerCase().indexOf(query) != -1;
 				});
 			res(r);
 		})
@@ -28,7 +28,7 @@ function reactionSearch(query) {
 	if (query.length < 2) {
 		return Bacon.once([]);
 	} else {
-		return Bacon.fromPromise( req(query) );
+		return Bacon.fromPromise( req(query.toLowerCase()) );
 	}
 }
 
