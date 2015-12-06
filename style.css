@@ -1,0 +1,12 @@
+img {
+	width: 200px;
+	height: auto;
+	display: inline-block;
+	margin: 20px;
+}
+
+.content {
+	max-width: 768px;
+	width: 90%;
+	margin: auto;
+}

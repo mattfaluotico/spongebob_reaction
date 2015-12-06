@@ -1,6 +1,4 @@
-var pics = document.querySelector(".reactions");
-
-var react;
+var pics = $(".reactions");
 
 // this is an event stream
 var searchInput = $("#search")
@@ -44,10 +42,8 @@ searchInput.awaiting(reactions).onValue(function(waiting) {
 
 reactions.onValue(function(results) {
 	if (results) {
-		pics.innerHTML = "";
-		console.log(results);
-		results.forEach(function (r) {
-			pics.innerHTML += r.url
-		});
+		pics.html($.map(results, function(reactionImage) {
+			return $('<img class="reaction" src="' + reactionImage.url + '">');
+		}));
 	}
 });
