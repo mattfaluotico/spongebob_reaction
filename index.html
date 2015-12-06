@@ -10,8 +10,22 @@
 			Are you ready? <input id="search" type="text">
 		</div>
 		<div class="reactions"></div>
+		<div>
+			<div>
+				<input id="a" type="text"> + <input id="b" type="text"> = <span id="c"></span>
+			</div>
+		</div>
 	</div>
-	<script src="bower_components/bacon/dist/Bacon.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="bower_components/bacon/dist/Bacon.js"></script>
 	<script src="app.js"></script>
+
+
+	<template name="result">
+		<div>
+			<img src="{{url}}">
+		</div>
+	</template>
+
 </body>
 </html>
