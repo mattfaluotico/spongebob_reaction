@@ -2,7 +2,7 @@ var pics = $(".reactions");
 
 // this is an event stream
 var searchInput = $("#search")
-	.asEventStream("keyup")
+	.asEventStream("input")
 	.debounce(300)
 	.map(".target.value")
 	.toProperty()
