@@ -43,7 +43,7 @@ searchInput.awaiting(reactions).onValue(function(waiting) {
 reactions.onValue(function(results) {
 	if (results) {
 		pics.html($.map(results, function(reactionImage) {
-			return $('<img class="reaction" src="' + reactionImage.url + '">');
+			return $('<img class="react" src="' + reactionImage.url + '">');
 		}));
 	}
 });

@@ -1,4 +1,4 @@
-img {
+.react {
 	width: 200px;
 	height: auto;
 	display: inline-block;
@@ -9,4 +9,52 @@ img {
 	max-width: 768px;
 	width: 90%;
 	margin: auto;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    background: lightblue;
+    margin: 0;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	background: lightblue;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0x;
+	box-shadow: 0 2px 16px 8px lightblue;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-size: 20pt;
+    border-bottom: black solid 1px;
+    padding-bottom: 20px;
+}
+
+.search-bar {
+    margin-top: 130px;
+    text-align: center;
+    font-size: 24pt;
+}
+
+input#search {
+    height: 24pt;
+    font-size: 18pt;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 250px;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    letter-spacing: 1px;
+}
+
+input#search:focus {
+    outline: 0;
+    border-bottom-color: yellow;
 }
