@@ -57,7 +57,7 @@ input#search {
     font-size: 18pt;
     background-color: transparent;
     border: 0;
-    width: 500px;
+    width: 100%;
     text-align: left;
     font-family:  'Muli', sans-serif;
     letter-spacing: 1px;
