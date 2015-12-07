@@ -28,7 +28,7 @@ function reactionSearch(query) {
 	if (query.length < 2) {
 		return Bacon.once([]);
 	} else {
-		return Bacon.fromPromise( req(query.toLowerCase()) );
+		return Bacon.fromPromise( req( trim( query.toLowerCase() ) ) );
 	}
 }
 
@@ -47,3 +47,8 @@ reactions.onValue(function(results) {
 		}));
 	}
 });
+
+
+function trim(string) {
+	return string.replace(/(.| )/g, "");
+}
