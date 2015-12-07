@@ -21,6 +21,7 @@
 	max-width: 768px;
 	width: 90%;
 	margin: auto;
+	position: relative;
 }
 
 body {
@@ -33,6 +34,8 @@ body {
 	background-color: #2F2F2F;
 	position: fixed;
 	top: 0;
+	max-width: 768px;
+	width: 90%;
 }
 
 h1 {
@@ -73,6 +76,7 @@ h2 {
     margin: 0;
     margin-bottom: 15px;
     font-size: 12pt;
+    width: 100%;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: lightblue;
