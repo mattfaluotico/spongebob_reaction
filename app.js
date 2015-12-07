@@ -50,5 +50,5 @@ reactions.onValue(function(results) {
 
 
 function trim(string) {
-	return string.replace(/(.| )/g, "");
+	return string.replace(/(\.| )/g, "");
 }
